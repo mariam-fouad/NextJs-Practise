@@ -9890,35 +9890,47 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 7
+          lineNumber: 16
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 8
+          lineNumber: 17
         },
         __self: this
-      }, "This is the main page"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      }, "This is the main page of ", this.props.appName), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 9
+          lineNumber: 18
         },
         __self: this
       }, "Go to ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
         href: "/auth",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 9
+          lineNumber: 18
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 9
+          lineNumber: 18
         },
         __self: this
       }, "Auth Page"))));
+    }
+  }], [{
+    key: "getInitialProps",
+    value: function getInitialProps(context) {
+      var promise = new Promise(function (resolve, reject) {
+        setTimeout(function () {
+          resolve({
+            appName: 'Next js'
+          });
+        }, 3000);
+      });
+      return promise;
     }
   }]);
 
