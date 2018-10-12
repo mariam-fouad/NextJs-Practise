@@ -9861,7 +9861,7 @@ var _jsxFileName = "/home/ahmed/Desktop/Mo's World/NextJs Practise/pages/auth/in
 
 
 
-var indexAuthPage = function indexAuthPage() {
+var indexAuthPage = function indexAuthPage(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
     __source: {
       fileName: _jsxFileName,
@@ -9874,7 +9874,7 @@ var indexAuthPage = function indexAuthPage() {
       lineNumber: 7
     },
     __self: this
-  }, "This is the auth main page"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_component_User__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, "This is the auth main page from  ", props.appName), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_component_User__WEBPACK_IMPORTED_MODULE_2__["default"], {
     name: "Mariam",
     age: 23,
     __source: {
@@ -9892,6 +9892,17 @@ var indexAuthPage = function indexAuthPage() {
     },
     __self: this
   }, "Go to the root"));
+};
+
+indexAuthPage.getInitialProps = function (context) {
+  var promise = new Promise(function (resolve, reject) {
+    setTimeout(function () {
+      resolve({
+        appName: 'Next js'
+      });
+    }, 3000);
+  });
+  return promise;
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (indexAuthPage);
